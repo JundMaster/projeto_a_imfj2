@@ -8,16 +8,22 @@ while (not over):
     print("What problem do you want to solve?")
     print("1. Floating")
     print("2. Springs")
+
+    # Gets user input
     userInput = input(">")
     if (userInput == "1"):
         print("\n" * 2)
+        # Goes to floatation problem resolution
         FloatingLoop()
+
     elif (userInput == "2"):
         print("\n" * 2)
+        # Goes to string problem resolution
         SpringLoop()
+        
     elif (userInput.lower() == "exit"):
         print("Bye bye!")
-        break
+        exit()
     else:
         print(f"'{userInput}' is not a valid option.")
         print("Choose 1 or 2.")
